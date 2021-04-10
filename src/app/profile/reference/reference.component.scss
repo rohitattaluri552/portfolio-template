@@ -1,9 +1,60 @@
 .cc-reference p{
     font-weight: 1000px;
-    color: black;
+    color: #232323;
     font-style: bold;
-  }
+}
 
-  .category p{
-      width: 10%
-  }
+.category p{
+    width: 10%
+}
+.cc-reference {
+    width: 50%;
+
+    @media screen and (max-width: 599px) {
+        width: 100%
+    }
+}
+.carousel-indicators {
+    li {
+        cursor: pointer;
+        bottom: -30px;
+    }
+
+    bottom: -12px;
+}
+
+.parallax {
+    background-image: url(../../../assets/images/reference_bg_img.jpeg);
+
+    min-height: 320px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // @media screen and (max-width: 599px) {
+    //     display: none;
+    // }
+
+    .cc-reference {
+        display: flex;
+        align-items: center;
+        height: 532px;
+        margin-left: 16px;
+    }
+
+    .card{
+        height: 350px;
+    }
+
+    @media screen and (max-width: 599px) {
+        background-image: url();
+        .cc-reference {
+            margin-left: 0;
+        }
+
+        .card {
+            height: 500px;
+        }
+    }
+}

@@ -8,6 +8,7 @@ export const environment = {
   production: false,
   //baseUrl : `${window.location.protocol}//${window.location.hostname}/portfolio/`,
   //baseUrl : `http://localhost:4200/`,
+  baseUrl : `https://formspree.io/f/xoqyayqz`,
 
   snotifyConfig : {
     showProgressBar: true,

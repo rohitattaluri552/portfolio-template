@@ -7,9 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './about/about.component';
-import { SkillsComponent } from './skills/skills.component';
+import { ClientComponent } from './client/client.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ExperienceComponent } from './experience/experience.component';
+import { ServicesComponent } from './services/services.component';
 import { EducationComponent } from './education/education.component';
 import { ReferenceComponent } from './reference/reference.component';
 import { ContactComponent } from './contact/contact.component';
@@ -21,7 +21,7 @@ import { ProjectsComponent } from './projects/projects.component';
     CommonModule,
     FormsModule,
     SnotifyModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
   ],
   declarations: [
     ProfileComponent,
@@ -29,9 +29,9 @@ import { ProjectsComponent } from './projects/projects.component';
     FooterComponent,
     IntroComponent,
     AboutComponent,
-    SkillsComponent,
+    ClientComponent,
     PortfolioComponent,
-    ExperienceComponent,
+    ServicesComponent,
     EducationComponent,
     ReferenceComponent,
     ContactComponent,

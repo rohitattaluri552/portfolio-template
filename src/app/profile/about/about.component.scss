@@ -3,3 +3,72 @@
     color:black;
     
 }
+
+.section {
+    color: #555;
+    margin-top: 30px;
+
+    .about {
+        display: flex;
+
+        img {
+            max-width: 100%;
+            min-width: 100%;
+        }
+
+        .right-section {
+        
+            article {
+                text-align: center;
+                margin-bottom: 16px;
+                border-bottom: 1px solid #dcdcdc;
+                font-size: 16px;
+                line-height: 27px;
+                padding-bottom: 16px;
+            }
+        
+            .policy-type {
+                text-align: center;
+                width: 33.33%;
+                svg {
+                    height: 72px;
+                    width: 100%;
+                    margin-bottom: 12px;
+                }
+    
+                b {
+                    font-size: 18px;
+                }
+            }
+    
+            .border-right-dash {
+                border-right: 1px dashed #555;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 556px) {
+        margin-top: 0;
+        .about {
+            background: #eff7ff;
+            padding: 20px 0;
+            border-radius: 4px;
+            .left-section {
+                display: none;
+            }
+
+            .right-section {
+                article {
+                    font-size: 14px;
+                }
+
+                .policy-type {
+                    svg {
+                        height: 64px;
+                    }
+                }
+            }
+        }
+    }
+}

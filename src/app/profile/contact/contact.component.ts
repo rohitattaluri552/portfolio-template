@@ -9,36 +9,27 @@ import { environment } from '../../../environments/environment';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
- 
+
+  snotifyConfig = environment.snotifyConfig;
   model: any = {};
 
-  constructor(){}
+  constructor(
+    private profileService: ProfileService,
+    private snotify: SnotifyService,
+  ){}
 
-  ngOnInit() {
-     }
+  ngOnInit() {}
 
-
-  // snotifyConfig = environment.snotifyConfig;
-  // model: any = {};
-
-  // constructor(
-  //   private profile: ProfileService,
-  //   private snotify: SnotifyService
-  // ) { }
-
-  // ngOnInit() {
-  // }
-
-  // contact() {
-  //   this.profile.contactus(this.model).subscribe(data => {
-  //     if (data.status) {
-  //       this.snotify.success(data.message, 'Success', this.snotifyConfig);
-  //     } else {
-  //       this.snotify.warning(data.message, 'Warning', this.snotifyConfig);
-  //     }
-  //   }, err => {
-  //     this.snotify.error('Something went wrong. Try again later.', 'Error', this.snotifyConfig);
-  //   });
-  // }
+  contact() {
+    this.profileService.contactus(this.model).subscribe(data => {
+      if (data.status) {
+        this.snotify.success(data.message, 'Success', this.snotifyConfig);
+      } else {
+        this.snotify.warning(data.message, 'Warning', this.snotifyConfig);
+      }
+    }, err => {
+      this.snotify.error('Something went wrong. Try again later.', 'Error', this.snotifyConfig);
+    });
+  }
 
 }

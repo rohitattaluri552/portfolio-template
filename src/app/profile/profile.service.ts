@@ -7,7 +7,7 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class ProfileService {
-  //baseUrl = environment.baseUrl;
+  baseUrl = environment.baseUrl;
 
   constructor(
     private http: HttpClient
@@ -98,9 +98,10 @@ export class ProfileService {
       'details': 'Developed the Official Website of the <strong>MITSVAH Literary Fest<\/strong>\r\nUnder <strong>Querencia CLUB<\/strong>.'
     }
   ];
-  // contactus(data: any): Observable<any> {
-  //   return this.http.post(this.baseUrl + 'contact', data);
-  // }
+
+  contactus(data: any): Observable<any> {
+    return this.http.post(this.baseUrl, data);
+  }
 
   skills(): Observable<any> {
     // return this.http.get(this.baseUrl + 'skills');
