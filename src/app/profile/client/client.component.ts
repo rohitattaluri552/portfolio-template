@@ -11,14 +11,9 @@ export class ClientComponent implements OnInit {
 
   clientsList: any = [];
   ngOnInit() {
-    for(let i = 0; i<6; i++) {
-      const imageString = `assets/images/clients/${i+1}.png`;
+    for(let i = 1; i<=7; i++) {
+      const imageString = `assets/images/clients/${i}.png`;
       this.clientsList.push(imageString);
     }
-  }
-
-  prepareArray(n: number): any[] {
-    console.log(this.clientsList);
-    return this.clientsList;
   }
 }

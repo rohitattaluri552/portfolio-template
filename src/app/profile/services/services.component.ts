@@ -13,29 +13,34 @@ export class ServicesComponent implements OnInit {
     this.services = [
       {
         image: 'assets/images/services-image.jpeg',
-        title: 'Business Services',
+        title: 'Java-based frameworks',
         description: 'The tiny ship today stiller The tiny ship today stiller',
       },
       {
         image: 'assets/images/services-image.jpeg',
-        title: 'Business Services',
+        title: 'Open-source technologies',
         description: 'The tiny ship today stiller The tiny ship today stiller',
       },
       {
         image: 'assets/images/services-image.jpeg',
-        title: 'Business Services',
+        title: 'Cloud-based development',
         description: 'The tiny ship today stiller The tiny ship today stiller',
       },
       {
         image: 'assets/images/services-image.jpeg',
-        title: 'Business Services',
+        title: 'End-to-end integration',
         description: 'The tiny ship today stiller The tiny ship today stiller',
       },
       {
         image: 'assets/images/services-image.jpeg',
-        title: 'Business Services',
+        title: 'Networks and systems security',
         description: 'The tiny ship today stiller The tiny ship today stiller',
-      }
+      },
+      {
+        image: 'assets/images/services-image.jpeg',
+        title: 'ERP Development, Upgrade & Maintainence',
+        description: 'The tiny ship today stiller The tiny ship today stiller',
+      },
     ];
   }
 

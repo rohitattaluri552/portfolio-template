@@ -1,6 +1,6 @@
-.container{
+.container {
   background: rgba(0, 0, 0, 0) url(../../../assets/images/bg-image.png) no-repeat scroll center center;
-  padding-bottom: 30px;
+  background-size: contain;
 }
 
 .sub-header {
@@ -23,13 +23,13 @@
   article {
     padding: 8px 8px 8px 12px;
     h3 {
-      font-size: 22px;
+      font-size: 18px;
       color: #001a57;
       margin-bottom: 5px;
     }
 
     p {
-      font-size: 16px;
+      font-size: 14px;
       height: 75px;
       overflow: scroll;
       word-break: break-all;
@@ -37,8 +37,6 @@
   }
 
   @media screen and (max-width: 556px) {
-    // display: flex;
-    // flex-direction: column;
     margin: 0 16px 16px;
     width: calc(100%);
 

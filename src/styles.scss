@@ -6,16 +6,21 @@
     margin-bottom: 20px;
     &:before {
         content: '';
-        width: 64px;
-        height: 4px;
-        border-radius: 10px;
-        background: #c3c3c3;
+        // width: 64px;
+        // height: 4px;
+        // border-radius: 10px;
+        // background: #c3c3c3;
         position: absolute;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0) url(assets/images/header-line.png) repeat scroll 0 0;
+        display: inline-block;
+        height: 5px;
+        width: 53px;
     }
 
+    
     @media screen and (max-width: 5996px) {
         font-size: 28px
     }
