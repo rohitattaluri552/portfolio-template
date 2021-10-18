@@ -1,4 +1,4 @@
-import { SnotifyPosition } from 'ng-snotify';
+// import { SnotifyPosition } from 'ng-snotify';
 
 export const environment = {
   production: true,  
@@ -6,6 +6,6 @@ export const environment = {
 
   snotifyConfig : {
     showProgressBar: true,
-    position: SnotifyPosition.rightTop,
+    // position: SnotifyPosition.rightTop,
   },
 };

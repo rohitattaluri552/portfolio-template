@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { SnotifyModule, SnotifyService, ToastDefaults } from 'ng-snotify';
 import { ProfileComponent } from './profile.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -13,15 +12,14 @@ import { ServicesComponent } from './services/services.component';
 import { EducationComponent } from './education/education.component';
 import { ReferenceComponent } from './reference/reference.component';
 import { ContactComponent } from './contact/contact.component';
-import { NgxSpinnerModule } from '../../../node_modules/ngx-spinner';
+// import { NgxSpinnerModule } from '../../../node_modules/ngx-spinner';
 import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    SnotifyModule,
-    NgxSpinnerModule,
+    // NgxSpinnerModule,
   ],
   declarations: [
     ProfileComponent,
@@ -38,8 +36,8 @@ import { ProjectsComponent } from './projects/projects.component';
     ProjectsComponent
   ],
   providers: [
-    { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
-    SnotifyService,
+    // { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
+    // SnotifyService,
   ]
 })
 export class ProfileModule { }

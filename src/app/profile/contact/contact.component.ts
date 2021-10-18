@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileService } from '../profile.service';
-import { SnotifyService } from 'ng-snotify';
+// import { SnotifyService } from 'ng-snotify';
 import { environment } from '../../../environments/environment';
 
 @Component({
@@ -15,7 +15,6 @@ export class ContactComponent implements OnInit {
 
   constructor(
     private profileService: ProfileService,
-    private snotify: SnotifyService,
   ){}
 
   ngOnInit() {}
@@ -23,12 +22,12 @@ export class ContactComponent implements OnInit {
   contact() {
     this.profileService.contactus(this.model).subscribe(data => {
       if (data.status) {
-        this.snotify.success(data.message, 'Success', this.snotifyConfig);
+        // this.snotify.success(data.message, 'Success', this.snotifyConfig);
       } else {
-        this.snotify.warning(data.message, 'Warning', this.snotifyConfig);
+        // this.snotify.warning(data.message, 'Warning', this.snotifyConfig);
       }
     }, err => {
-      this.snotify.error('Something went wrong. Try again later.', 'Error', this.snotifyConfig);
+      // this.snotify.error('Something went wrong. Try again later.', 'Error', this.snotifyConfig);
     });
   }
 
