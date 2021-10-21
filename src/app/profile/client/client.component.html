@@ -3,7 +3,7 @@
     <h4 class="section-heading mt-0">Our Clients</h4>
     <div class="grid-view">
       <div *ngFor="let client of clientsList" class="img-cover">
-        <img [src]='client'>
+        <img [src]='client' loading="lazy">
       </div>
     </div>
   </div>

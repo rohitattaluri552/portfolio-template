@@ -2,5 +2,5 @@
 
 export const environment = {
   production: true,  
-  baseUrl : `https://formspree.io/f/xoqyayqz`,
+  baseUrl : 'https://formspree.io/f/xbjqegek',
 };

@@ -3,15 +3,17 @@
    <div class="container">
       <p class="sub-header">A tale of a fateful trip that started from this tropic port aboard this tiny ship today stillers</p>
       <div class="row">
-         <div class="d-flex border service-tile" *ngFor="let service of services">
-            <div class="img-cover">
-               <img [src]="service.image" class="w-100 h-100">
-            </div>
-            <article class="w-75">
-               <h3>{{service.title}}</h3>
-               <p>{{service.description}}</p>
-            </article>
-         </div>
+         <ul class="cards">
+            <li class="cards_item" *ngFor="let service of services">
+               <div class="card">
+                  <div class="card_image" loading="lazy" [style.background-image]="'url(' + service.image + ')'"></div>
+                  <div class="card_content">
+                     <h2 class="card_title mb-2">{{ service.title }}</h2>
+                     <p class="card_text">{{ service.description }}</p>
+                  </div>
+               </div>
+            </li>
+         </ul>
       </div>
    </div>
 </div>

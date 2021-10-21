@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProfileService } from '../profile.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-contact',
@@ -8,8 +9,14 @@ import { ProfileService } from '../profile.service';
 })
 export class ContactComponent implements OnInit {
 
-  model: any = {};
+  model: any = {
+    name: null,
+    email: null,
+    subject: null,
+    message: null
+  };
 
+  endPointId = environment.baseUrl;
   constructor(
     private profileService: ProfileService,
   ){}
@@ -17,15 +24,21 @@ export class ContactComponent implements OnInit {
   ngOnInit() {}
 
   contact() {
-    this.profileService.contactus(this.model).subscribe(data => {
-      if (data.status) {
-        // this.snotify.success(data.message, 'Success', this.snotifyConfig);
-      } else {
-        // this.snotify.warning(data.message, 'Warning', this.snotifyConfig);
-      }
-    }, err => {
-      // this.snotify.error('Something went wrong. Try again later.', 'Error', this.snotifyConfig);
-    });
+    if(!this.isBtnDisabled()) {
+      this.profileService.contactus(this.model).subscribe(data => {
+        if (data.status) {
+          // this.snotify.success(data.message, 'Success', this.snotifyConfig);
+        } else {
+          // this.snotify.warning(data.message, 'Warning', this.snotifyConfig);
+        }
+      }, err => {
+        // this.snotify.error('Something went wrong. Try again later.', 'Error', this.snotifyConfig);
+      });
+    }
+  }
+
+  isBtnDisabled() {
+    return !(this.model.name !== null && this.model.subject !== null && this.model.email !== null);
   }
 
 }

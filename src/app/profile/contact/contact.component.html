@@ -1,5 +1,5 @@
 <div class="section" id="contact">
-  <div class="cc-contact-information" style="background-image: url('assets/images/contact.jpg');">
+  <div class="cc-contact-information" loading="lazy" style="background-image: url('assets/images/contact.jpg');">
     <div class="container">
       <div class="cc-contact">
         <div class="row">
@@ -44,7 +44,7 @@
                             <span class="input-group-addon">
                               <i class="fa fa-envelope"></i>
                             </span>
-                            <input class="form-control" type="text" name="email" placeholder="E-mail"
+                            <input class="form-control" type="email" name="email" placeholder="E-mail"
                               [(ngModel)]="model.email" #email="ngModel"
                               [ngClass]="{ 'is-invalid': f.submitted && email.invalid }"
                               pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required />
@@ -62,7 +62,7 @@
                       </div>
                       <div class="row">
                         <div class="col">
-                          <button class="btn btn-primary" type="submit">Send</button>
+                          <button class="btn btn-primary text-light" [disabled]="isBtnDisabled()" type="submit">Send</button>
                         </div>
                       </div>
                     </form>
@@ -73,11 +73,11 @@
                     <p class="mb-0">
                       <strong>Phone</strong>
                     </p>
-                    <p class="pb-2">470-242-6385 (Work)</p>
+                    <p class="pb-2">+1 (608) 338-8463 (Work)</p>
                     <p class="mb-0">
                       <strong>Email</strong>
                     </p>
-                    <p>schandu.wd@gmail.com</p>
+                    <p>ramana@clouditsystemsus.com</p>
                   </div>
                 </div>
               </div>

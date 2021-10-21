@@ -24,7 +24,9 @@
         h3 {
             margin: 0;
             line-height: 1;
-            color: black;
+            color: white;
+            font-weight: 700;
+            font-family: system-ui;
         }
     }
 
@@ -34,11 +36,11 @@
         a {
             color: white;
             font-weight: 600;
-            font-size: 14px;
+            font-size: 18px !important;
         }
 
         &:hover {
-            background: rgba(0,0,0,.4);
+            background: rgb(0 0 0 / 69%);
             letter-spacing: 1;
             border-radius: 4px;
             transition: all 0.2s ease-out;
