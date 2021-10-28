@@ -10,6 +10,12 @@
     .about {
         display: flex;
 
+        .left-section {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right;
+        }
+
         img {
             max-width: 100%;
             min-width: 100%;

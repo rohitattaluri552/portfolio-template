@@ -1,8 +1,7 @@
 .header-component {
     box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
 
-    background: rgb(57,83,218);
-    background: linear-gradient(159deg, rgba(57,83,218,1) 0%, rgba(207,115,134,1) 98%);
+    background: linear-gradient(159deg,#4A39DA,#395CDA 98%);
 
     position: sticky;
     top: 0;
@@ -15,11 +14,6 @@
     .logo {
         display: inline-block;
         text-decoration: none;
-
-        img {
-            max-height: 100%;
-            max-width: 100%;
-        }
 
         h3 {
             margin: 0;
@@ -44,10 +38,6 @@
             letter-spacing: 1;
             border-radius: 4px;
             transition: all 0.2s ease-out;
-
-            a {
-                color: #f48fb1;
-            }
         }
     }
 }

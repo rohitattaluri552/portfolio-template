@@ -14,12 +14,25 @@ import { ReferenceComponent } from './reference/reference.component';
 import { ContactComponent } from './contact/contact.component';
 import { NgxSpinnerModule } from '../../../node_modules/ngx-spinner';
 import { ProjectsComponent } from './projects/projects.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     NgxSpinnerModule,
+    // RouterModule.forChild([
+    //   { 
+    //     path: '',
+    //     component: ProfileComponent,
+    //     children: [
+    //       {
+    //         path: 'about',
+    //         component: AboutComponent
+    //       }
+    //     ]
+    //   }
+    // ])
   ],
   declarations: [
     ProfileComponent,
@@ -36,6 +49,10 @@ import { ProjectsComponent } from './projects/projects.component';
     ProjectsComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA ],
+  // exports: [
+  //   FooterComponent,
+  //   HeaderComponent
+  // ],
   providers: [
     // { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
     // SnotifyService,
